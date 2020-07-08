@@ -1,0 +1,20 @@
+@media (max-width: 800px) {
+	
+	#calender {
+		width: 100%;
+		margin-top: 3%;
+	}
+	
+	.price-box-day{
+		font-size: 0.8em;
+	}
+	
+	.price-box-compra{
+		font-size: 0.7em;
+	}
+	
+	.price-box-venta{
+		font-size: 0.7em;
+	}
+	
+}

@@ -1,0 +1,37 @@
+footer{
+	width: 100%;
+	display: flex;
+	padding: 1% 0;
+	padding-bottom: 2%;
+}
+
+footer p{
+	color: var(--main-color);
+	font-weight: 900;
+	cursor: pointer;
+}
+
+#texto-left{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#texto-left p{
+	margin: 1%;
+}
+
+#texto-right{
+	width: 45%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#texto-right a{
+	color: var(--main-color);
+	text-decoration: none;
+	margin: 2%;
+	font-weight: 600;
+}

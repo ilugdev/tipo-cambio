@@ -1,0 +1,43 @@
+@media (max-width: 800px) {
+	
+	#equivalencias{
+		width: 90%;
+		margin: 5% auto;
+		margin-bottom: 10%;
+	}
+
+	#equivalencias-title{
+		font-size: 10vw;
+		margin-bottom: 5%;
+	}
+
+	#equivalencias-boxes-con{
+		flex-direction: column;
+	}
+
+	.box-equivalencia{
+		width: 100%;
+		margin-top: 5%;
+	}
+
+	.box-equivalencia-title h1{
+		font-size: 1.8em;
+	}
+
+	.box-equivalencia-info-left h2{
+		font-size: 1.4em;
+	}
+
+	.box-equivalencia-info-right h2{
+		font-size: 1.4em;
+	}
+
+	.box-equivalencia-footer-left h1{
+		font-size: 1.3em;
+	}
+
+	.box-equivalencia-footer-right h1{
+		font-size: 1.3em;
+	}
+	
+}

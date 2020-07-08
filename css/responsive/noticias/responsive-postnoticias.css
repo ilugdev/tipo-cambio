@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+
+	.postnoticias-con-text h1{
+		font-size: 1em;
+	}
+
+	.postnoticias-con-text h3{
+		font-size: 0.7em;
+	}
+
+}

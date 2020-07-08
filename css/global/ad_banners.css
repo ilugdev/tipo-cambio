@@ -1,0 +1,23 @@
+.ad-con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#h-ad{
+	width: 727px;
+	height: 89px;
+	background-color: lightgray;
+}
+
+#v-ad{
+	width: 163px;
+	height: 601px;
+	background-color: lightgray;
+}
+
+#s-ad{
+	width: 302px;
+	height: 253px;
+	background-color: lightgray;
+}

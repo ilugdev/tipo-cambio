@@ -1,0 +1,162 @@
+#postsection{
+	width: 90%;
+	margin: 5% auto;
+}
+
+#view-noticia{
+	width: 100%;
+	background-color: white;
+	border-radius: 1.5em;
+	position: relative;
+	padding-bottom: 2%;
+}
+
+#close-noticia{
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	font-weight: 900;
+	font-size: 1.5em;
+	color: tomato;
+	cursor: pointer;
+}
+
+#noticia-con{
+	width: 94%;
+	height: 100%;
+	padding: 5% 3%;
+	margin-bottom: 5%;
+}
+
+#noticia-img{
+	width: 100%;
+	border-radius: 1.5em;
+	margin-top: 3%;
+}
+
+#noticia-title{
+	color: var(--main-color);
+}
+
+#noticia-content{
+	white-space: pre-line;
+	color: var(--main-color);
+}
+
+.post-right-left-sections{
+	display: flex;
+	justify-content: space-between;
+}
+
+#postsection-left{
+	width: 70%;
+}
+
+.noticiapost{
+	width: 100%;
+	height: 280px;
+	background-color: white;
+	border-radius: 1.5em;
+	overflow: hidden;
+	margin-bottom: 5%;
+}
+
+#postsection-right{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#destacados{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25%;
+}
+
+#destacados-title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-color);
+	border-radius: 1.5em 1.5em 0 0;
+}
+
+#destacados-title img{
+	width: 20px;
+	height: 20px;
+}
+
+#destacados-title h1{
+	margin-left: 3%;
+	color: white;
+	font-size: 1.5em;
+}
+
+#destacados-section{
+	width: 100%;
+	background-color: white;
+	border-radius: 0 0 1.5em 1.5em;
+}
+
+#destacados-section ul{
+	margin-right: 3%;
+	list-style: none;
+	padding-left: 30px;
+}
+
+#destacados-section ul li::before {
+  content: "\2022";
+  color: var(--secondary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#destacados-section li{
+	margin: 10% 0;
+	color: var(--main-color);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#destacados-section li:hover{
+	transition: 0.2s all;
+	transform: scale(1.025)
+}
+
+#destacados-section li a{
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+.pags-post-con{
+	width: 100%;
+	display: flex;
+}
+
+.pag-post{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: var(--secondary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1%;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.pag-post:hover{
+	transform: scale(1.2);
+	transition: 0.1s all;
+}
+
+.currect-pag-post{
+	background-color: var(--main-color);
+}

@@ -1,0 +1,70 @@
+.exchange-lista-label{
+  width: 55%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  margin-bottom: 1%;
+}
+
+.exchange-lista-label h1{
+  width: 50%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-left: 4%;
+  color: var(--secondary-color);
+}
+
+.exchange-lista{
+  width: 90%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.exchange-lista img{
+  width: 40%;
+}
+
+.exchange-lista a{
+  width: 83%;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--secondary-color);
+  padding: 0.3rem 1rem;
+  margin-top: 10%;
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+}
+
+.exchange-lista-compra-venta{
+  width: 55%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.exchange-lista-data{
+  display: flex;
+}
+
+.exchange-lista-compra-venta h1{
+  margin: 0;
+  width: 50%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: var(--main-color);
+}

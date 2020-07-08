@@ -1,0 +1,106 @@
+@media (max-width: 800px) {
+	
+	/*Title*/
+	#exchange-title img{
+		width: 7%;
+	}
+
+	#exchange-title h1{
+		font-size: 7vw;
+	}
+	
+	/*Exchange online*/
+	#exchange-online{
+		width: 90%;
+		margin: 17% auto;
+	}
+
+	#exchange-online-slider{
+		width: 100%;
+	}
+
+	#slider-online-con{
+		height: 80%;
+		padding: 5% 0 10% 0;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-row-gap: 10px;
+	}
+
+	#slider-online-con {
+	    padding-top: 10%;
+	}
+	
+	#compra-venta-box {
+	    width: 55%;
+	    height: 100%;
+	    background-color: white;
+	    border-radius: 1.5rem;
+	    display: inline-flex;
+	    flex-direction: column;
+	    z-index: 1;
+	}
+
+	.compra-venta-text-con h2{
+		font-size: 4.5vw;
+	}
+
+	.compra-venta-text-con h1{
+		font-size: 4.5vw;
+	}
+	
+	/*Exchange presencial*/
+	#exchange-presencial{
+		width: 90%;
+		margin: 10% auto 0 auto;
+		flex-direction: column;
+	}
+	
+	#presencial-coins{
+		top: 42%;
+		width: 35%;
+	}
+
+	#exchange-presencial-info{
+		width: 100%;
+		margin: 10% auto 0 auto;
+	}
+
+	#exchange-presencial-boxes{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#exchange-presencial-boxes #compra-venta-box{
+		width: 80% !important;
+		margin: 3% auto 0 auto;
+	}
+
+	#exchange-presencial-boxes #compra-venta-box #compra-venta-con{
+		width: 100%;
+		margin: 0;
+	}
+	
+	/*Exchange interbancario*/
+	#exchange-interbancario{
+		width: 90%;
+		margin: 5% auto; 
+	}
+
+	#interbancario-info{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#interbancario-info #compra-venta-box{
+		width: 80% !important;
+		margin: 5% auto 0 auto;
+	}
+
+	#interbancario-info #compra-venta-box #compra-venta-con{
+		width: 100%;
+		margin: 0;
+	}
+	
+}

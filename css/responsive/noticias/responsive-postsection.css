@@ -1,0 +1,19 @@
+@media (max-width: 800px) {
+
+	.post-right-left-sections{
+		flex-direction: column-reverse;
+	}
+
+	#postsection-left, #postsection-right{
+		width: 100%;
+	}
+
+	.noticiapost{
+		height: 260px;
+	}
+
+	#destacados{
+		margin: 10%;
+	}
+
+}

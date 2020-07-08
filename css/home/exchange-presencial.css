@@ -1,0 +1,26 @@
+#exchange-presencial{
+	width: 85%;
+	margin: 5% 7.5%;
+	display: flex;
+	position: relative;
+}
+
+#presencial-coins{
+	position: absolute;
+	top: 0;
+	right: -2.5%;
+	z-index: -1;
+}
+
+#exchange-presencial-info{
+	width: 60%;
+	margin-left: 4%;
+	padding-top: 3%;
+	display: flex;
+	flex-direction: column;
+}
+
+#exchange-presencial-boxes{
+	width: 100%;
+	margin-top: 3%;
+}

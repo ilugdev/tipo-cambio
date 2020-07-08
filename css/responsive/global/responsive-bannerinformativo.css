@@ -1,0 +1,41 @@
+@media (max-width: 800px) {
+	
+	/*Home*/
+	#banner-informativo{
+		background-size: 110% 100%;
+		height: 200px;
+		margin: 10% 0;
+	}
+
+	#banner-informativo h1 {
+		font-size: 1em;
+		text-align: center;
+		margin-bottom: 2%;
+	}
+
+	#banner-informativo-text{
+		width: 50%;
+		margin-right: 0%;
+	}
+	
+	/*Rest*/
+	#banner-informativo-text-rest{
+		width: 85%;
+	}
+	
+	#banner-informativo-text-rest .text{
+		font-size: 0.6em;
+	}
+	
+	#banner-informativo-text-rest #title{
+		font-size: 0.8em;
+	}
+	
+	#subscription-input input{
+		width: 45%;
+	}
+	
+	#subscription-input button{
+		width: 15%;
+	}
+}

@@ -1,0 +1,41 @@
+@media (max-width: 800px) {
+	
+	#rounded-box-con{
+		margin: 0;
+	}
+	
+	#rounded-box{
+		width: 95%;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#change-currency{
+		margin: 0 !important;
+	}
+
+	#exchanger-con{
+		width: 90%;
+		margin-top: 5%;
+	}
+	
+	#exchange-rate{
+		margin-bottom: 3%;
+	}
+	
+	#exchange-rate h3, #exchange-rate sub{
+		font-size: 7.8vw;
+	}
+	
+	#exchange-rate h1{
+		margin: 5% 0;
+		font-size: 15vw;
+	}
+
+	#exchange-rate span{
+		font-size: 7vw;
+	}
+
+}

@@ -1,0 +1,141 @@
+#banner-informativo{
+	width: 100%;
+	height: 381px;
+	background-image: url('../../img/banner/banner2.png');
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+}
+
+#banner-informativo span{
+	color: var(--secondary-color);
+}
+
+#banner-informativo-text{
+	width: 45%;
+	height: 100%;
+	margin-right: 7%;
+	display: flex;
+	align-items: flex-end;
+}
+
+#banner-informativo h1{
+	width: 100%;
+	color: white;
+	font-size: 2em;
+	margin-bottom: 5%;
+}
+
+#banner-informativo-text-rest{
+	width: 65%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+#banner-informativo-text-rest .text{
+	width: 100%;
+	font-size: 1.1em;
+	color: white;
+	text-align: center;
+	margin: 0.5% 0;
+}
+
+#banner-informativo-text-rest #title{
+	color: var(--secondary-color);
+	font-size: 1.3em;
+}
+
+#subscription-input{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 4% 0 6% 0;
+	position: relative;
+}
+
+#subscription-message{
+	position: absolute;
+	width: 35%;
+	bottom: -80%;
+	font-size: 1.3em;
+	right: -20%;
+	color: red;
+	font-weight: 900;
+	background-color: white;
+	border-radius: 15px;
+	padding: 5px 15px;
+	animation: buzz 0.5s ease;
+}
+
+@keyframes buzz {
+	0%{
+		transform: translateX(-2%) translateY(-3%);
+	}
+	10%{
+		transform: translateX(2%) translateY(4%);
+	}
+	20%{
+		transform: translateX(-3%) translateY(-4%);
+	}
+	30%{
+		transform: translateX(2%) translateY(1%);
+	}
+	40%{
+		transform: translateX(2%) translateY(2%);
+	}
+	50%{
+		transform: translateX(0%) translateY(1%);
+	}
+	60%{
+		transform: translateX(-2%) translateY(2%);
+	}
+	70%{
+		transform: translateX(0%) translateY(2%);
+	}
+	80%{
+		transform: translateX(2%) translateY(0%);
+	}
+	90%{
+		transform: translateX(0%) translateY(1%);
+	}
+	100%{
+		transform: translateX(1%) translateY(2%);
+	}
+}
+
+#subscription-input input{
+	width: 40%;
+	padding: 15px 25px;
+	border-radius: 5em 0 0 5em;
+	border: none;
+	font-weight: 600;
+	color: var(--main-color);
+}
+
+#subscription-input input::placeholder { 
+  color: var(--main-color);
+  opacity: 1;
+}
+
+#subscription-input input:-ms-input- { 
+  color: var(--main-color);
+  opacity: 1;
+}
+
+#subscription-input input::-ms-input- { 
+  color: var(--main-color);
+  opacity: 1;
+}
+
+#subscription-input button{
+	width: 8%;
+	border-radius: 0 5em 5em 0;
+	border: none;
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}

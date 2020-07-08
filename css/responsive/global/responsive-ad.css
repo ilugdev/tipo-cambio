@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+	
+	#h-ad{
+		width: 100%;
+	}
+
+	#v-ad{
+		display: none;
+	}
+	
+	#s-ad{
+		margin: auto;
+	}
+	
+}

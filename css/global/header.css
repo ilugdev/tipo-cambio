@@ -1,0 +1,222 @@
+header{
+	width: 100%;
+	height: 570px;
+	background-image: url('../../img/banner/banner.png');
+	background-size: 100% 100%;
+	padding-top: 1%;
+	position: relative;
+}
+
+nav{
+	width: 85%;
+	margin: 0 7.5%;
+	display: flex;
+}
+
+#logo{
+	width: 241px;
+}
+
+#nav-items{
+	width: 500px;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#nav-items a{
+	text-decoration: none;
+}
+
+#nav-items p{
+	color: white;
+	cursor: pointer;
+}
+
+#social-network-pc{
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#social-network-mobile{
+	display: none;
+}
+
+#social-network-pc img{
+	width: 30px;
+	cursor: pointer;
+}
+
+#text-header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-top: 110px;
+}
+
+#text-header-title{
+	width: 60%;
+	text-align: center;
+	font-size: 3em;
+	margin: 0 0 1% 0;
+}
+
+#text-header-subtitle{
+	width: 50%;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0 0 0.5% 0;
+}
+
+#text-buy-sell{
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#text-buy-sell h3{
+	font-size: 1.5em;
+	margin: 0 0 0.5% 0;
+	color: var(--secondary-color);
+    margin: 0 -5%;
+}
+
+#text-buy-sell span{
+	color: white;
+}
+
+#dolar_left{
+	position: absolute;
+	top: 30%;
+	left: 7%;
+}
+
+#dolar_right{
+	position: absolute;
+	top: 32%;
+	right: 5%;
+}
+
+/*home*/
+#rounded-box-con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5%;
+}
+
+#rounded-box{
+	width: 60%;
+	height: 280px;
+	background-color: white;
+	border-radius: 1.5rem;
+	display: flex;
+}
+
+#exchanger-con{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 3% 0;
+}
+
+#currency{
+	width: 99.5%;
+	display: flex;
+	border: 1px solid var(--main-color);
+	border-radius: 0.5rem;
+}
+
+#change-currency{
+	background-color: var(--main-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13px;
+	cursor: pointer;
+}
+
+#change-currency img{
+	width: 50px;
+}
+
+.currency-data{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3% 0;
+}
+
+.currency-data img{
+	width: 35px;
+}
+
+#currency-text{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 5%;
+}
+
+#currency-text h1{
+	margin: 0;
+	font-size: 20px;
+	color: blue;
+}
+
+#currency-text h3{
+	margin: 0;
+	font-size: 11px;
+	color: var(--main-color);
+}
+
+#amount{
+	width: 94.5%;
+	border: 1px solid var(--main-color);
+	border-radius: 0.5rem;
+	padding: 5% 0;
+	padding-left: 5%;
+	font-size: 20px;
+	margin-top: 1%;
+}
+
+#exchange-btn{
+	width: 100%;
+	background-color: var(--main-color);
+	border: none;
+	border-radius: 0.5rem;
+	padding: 13px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	margin-top: 1%;
+}
+
+#exchange-rate{
+	padding: 4% 0;
+	padding-left: 3%;
+	display: flex;
+	flex-direction: column;
+}
+
+#exchange-rate h3{
+	color: var(--main-color);
+	margin: 0;
+	font-size: 1.8vw;
+}
+
+#exchange-rate h1{
+	color: var(--main-color);
+	font-size: 3.5vw;
+	margin: 7% 0;
+}
+
+#exchange-rate span{
+	font-size: 2vw;
+}

@@ -1,0 +1,24 @@
+:root{
+	--main-color: #03056d;
+	--secondary-color: #00d7fc;
+}
+
+*{
+	font-family: 'Muli', sans-serif;
+}
+
+#desactive-con{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#desactive-con h1{
+	font-weight: 900;
+	color: royalblue;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 5em;
+	padding: 1rem 2rem;
+}

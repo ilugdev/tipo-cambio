@@ -1,0 +1,16 @@
+@media (max-width: 800px) {
+	
+	#calender-controller {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	
+	#calender-controller .custom-select:first-of-type{
+		width: 45%;
+	}
+	
+	#calender-controller button{
+		width: 20%;
+	}
+	
+}

@@ -1,0 +1,17 @@
+@media (max-width: 800px) {
+
+	footer{
+		flex-direction: column;
+		padding: 5% 0 12vh 0;
+	}
+
+	#texto-left{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#texto-right{
+		display: none;
+	}
+	
+}
