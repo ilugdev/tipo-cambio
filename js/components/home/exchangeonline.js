@@ -82,7 +82,6 @@ const ExchangeOnline = {
 				state.items.push(m(CompraVentaBox, { src: obj[1].img, compra: obj[1].buyRate, venta: obj[1].sellRate, link: obj[1].link }))
 				state.itemsMobile.push({ src: obj[1].img, compra: obj[1].buyRate, venta: obj[1].sellRate, link: obj[1].link})
 			}
-			console.log(state)
 		})
 		.catch(err => console.log(err))
 

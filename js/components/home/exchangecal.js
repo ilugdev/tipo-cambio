@@ -1,9 +1,13 @@
+import ComparacionCasasCambio from './comparacioncasascambio.js'
+
 const state = {
 	dolar: {},
 	amountFrom: 1,
 	amountTo: 0,
 	convertion: 'usdTOsol',
-	styleConversion: ''
+	styleConversion: '',
+	showComparative: false,
+	handleComparativeSize: null
 }
 
 function ExchangerCal() {
@@ -94,6 +98,13 @@ const ExchangeRate = {
 			m('h1', { style: state.styleConversion }, state.amountTo, m('span', currency.to)),
 			m('h3', `1 USD = ${usdToSol} SOL`),
 			m('h3', `1 SOL = ${solToUsd} USD`),
+			m('button#switch-comparacion',
+			{ onclick: () => {
+				state.handleComparativeSize(!state.showComparative)
+				state.showComparative = !state.showComparative
+			}},
+			state.showComparative ? 'Ocultar comparación' : 'Mostrar comparación'
+			)
 		])
 	}
 }
@@ -101,10 +112,14 @@ const ExchangeRate = {
 const ExchangeCal = {
 	view: function(vnode) {
 		state.dolar = vnode.attrs.dolar
+		state.handleComparativeSize = vnode.attrs.handleComparativeSize
 		
 		return [
-			m(Exchanger),
-			m(ExchangeRate)
+			m('', { style: { display: 'flex' } }, [
+				m(Exchanger),
+				m(ExchangeRate),
+			]),
+			state.showComparative ? m(ComparacionCasasCambio, { convertion: state.convertion, amountFrom: state.amountFrom }) : null
 		]
 	}
 }

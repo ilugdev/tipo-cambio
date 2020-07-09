@@ -6,7 +6,12 @@ const state = {
 	id: '',
 	img: '',
 	title: '',
-	content: ''
+	content: '',
+	comparativeSize: false
+}
+
+function handleComparativeSize(val) {
+	state.comparativeSize = val
 }
 
 const RoundBox = {
@@ -16,7 +21,6 @@ const RoundBox = {
 			url: `/lastnoticia`
 		})
 		.then(data => {
-			console.log(data)
 			for(let obj of Object.entries(data)) {
 				let { id, titulo, articulo, miniatura } = obj[1]
 				
@@ -39,11 +43,14 @@ const RoundBox = {
 		let changeStateNoticia = vnode.attrs.changeStateNoticia
 		
 		if(page === 'home') {
-			//style only desktop 
-			width > 800 ? pageStyle = 'padding-left: 5%' : null
+			//style only desktop
+			width > 800 ? pageStyle = 'padding-left: 5%; display: block;' : null
+			
+			let customHeight = '' 
+			state.comparativeSize ? customHeight = 'height: 550px;' : customHeight = 'height: 280px;'
 			
 			return m('#rounded-box-con',
-				m('#rounded-box', { style: pageStyle }, m(ExchangeCal, { dolar: dolar }))
+				m('#rounded-box', { style: pageStyle + customHeight }, m(ExchangeCal, { dolar: dolar, handleComparativeSize: handleComparativeSize }))
 			)
 		} else if(page === 'variaciondolar'){
 			pageStyle = 'justify-content:center;align-items:center;padding-left: 1%'
