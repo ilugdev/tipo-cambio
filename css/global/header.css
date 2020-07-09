@@ -115,6 +115,7 @@ nav{
 	background-color: white;
 	border-radius: 1.5rem;
 	display: flex;
+	transition: 0.2s height cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 #exchanger-con{
@@ -123,6 +124,10 @@ nav{
 	flex-direction: column;
 	justify-content: space-evenly;
 	padding: 3% 0;
+}
+
+#exchange-cal-con{
+	display: flex;
 }
 
 #currency{
@@ -240,10 +245,20 @@ nav{
 	transform: scale(1.03);
 }
 
+@keyframes show{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 #comparacion-casas-cambio{
 	width: 91%;
 	display: flex;
 	flex-direction: column;
+	animation: 2s show;
 }
 
 #comparative-grid{

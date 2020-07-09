@@ -1,4 +1,8 @@
-@media (max-width: 800px) {	
+@media (max-width: 800px) {
+
+	#tipomsganddestacados{
+		flex-direction: column;
+	}
 
 	#tipo-dolar-msg{
 		width: 95%;
@@ -32,6 +36,12 @@
 	#msg-box p{
 		text-align: center;
 		font-size: 1.5em;
+	}
+
+	#rightsectioncon{
+		width: 90%;
+		margin: 0;
+		margin-left: -5%;
 	}
 	
 }

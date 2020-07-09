@@ -89,5 +89,23 @@
 	#dolar_right{
 		display: none;
 	}
+
+	#comparative-grid{
+		grid-template-columns: 1fr;
+	}
+
+	.comparative-box{
+		width: 90%;
+		margin: auto
+	}
+
+	.comparative-box h1{
+		margin-right: 5%;
+	}
+
+	#switch-comparacion{
+		position: initial;
+		margin-top: 7%;
+	}
 	
 }

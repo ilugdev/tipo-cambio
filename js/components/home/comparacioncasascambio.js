@@ -14,26 +14,30 @@ const ComparativeBox = {
     let comparativeData = 0
 
     let convertion = vnode.attrs.convertion
-    if(convertion = 'solTOusd') {
-      comparativeData = amountFrom * compra
-    } else if(convertion =  'usdTOsol') {
-      comparativeData = amountFrom * venta
+    
+    if(convertion === 'usdTOsol') {
+      comparativeData = (amountFrom * venta).toFixed(3)
+    } else {
+      comparativeData = (amountFrom / compra).toFixed(3)
     }
 
     return m('.comparative-box', [
       m('img', { src: src, alt: 'exchange-logo' }),
-      m('h1', comparativeData.toFixed(2))
+      m('h1', comparativeData)
     ])
   }
 }
 
 const ComparacionCasasCambio = {
   oninit: function() {
+
 		m.request({
 			method: "GET",
 			url: "/exchange-houses"
 		})
 		.then(res => {
+      //reset
+      state.items = []
 			for(let obj of Object.entries(res)) {
 				state.items.push({ src: obj[1].img, compra: obj[1].buyRate, venta: obj[1].sellRate })
 			}

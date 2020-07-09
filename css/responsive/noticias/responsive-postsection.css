@@ -16,4 +16,16 @@
 		margin: 10%;
 	}
 
+	#noticia-con{
+		padding: 13% 3%;
+	}
+
+	#close-noticia{
+		left: 12px;
+	}
+
+	.pags-post-con{
+		margin-top: 5%;
+	}
+
 }

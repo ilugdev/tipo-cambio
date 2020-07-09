@@ -115,7 +115,7 @@ const ExchangeCal = {
 		state.handleComparativeSize = vnode.attrs.handleComparativeSize
 		
 		return [
-			m('', { style: { display: 'flex' } }, [
+			m('#exchange-cal-con', [
 				m(Exchanger),
 				m(ExchangeRate),
 			]),

@@ -12,16 +12,22 @@
 		align-items: center;
 	}
 
+	#exchange-cal-con{
+		width: 90%;
+		flex-direction: column;
+	}
+
 	#change-currency{
 		margin: 0 !important;
 	}
 
 	#exchanger-con{
-		width: 90%;
+		width: 100%;
 		margin-top: 5%;
 	}
 	
 	#exchange-rate{
+		width: 100%;
 		margin-bottom: 3%;
 	}
 	
@@ -36,6 +42,6 @@
 
 	#exchange-rate span{
 		font-size: 7vw;
-	}
+	}	
 
 }
