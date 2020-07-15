@@ -6,7 +6,10 @@ import askAds from '../global/askAds.js'
 
 var state = {
 	ads: [
-
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		}
 	]
 }
 

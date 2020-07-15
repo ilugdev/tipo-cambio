@@ -88,15 +88,18 @@ app.get('/publicidad', (req, res) => {
 
     if(req.query.medida === 'horizontal') {
         res.json({
-            enlace: 'horizontal'
+            img: 'imagen',
+            link: 'enlace'
         })
     } else if(req.query.medida === 'vertical') {
         res.json({
-            enlace: 'vertical'
+            img: 'imagen',
+            link: 'enlace'
         })
     } else {
         res.json({
-            enlace: 'cuadrada'
+            img: 'imagen',
+            link: 'enlace'
         })
     }
 })

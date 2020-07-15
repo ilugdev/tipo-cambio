@@ -8,7 +8,10 @@ import askAds from '../global/askAds.js'
 
 var state = {
 	ads: [
-
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		}
 	]
 }
 
@@ -22,7 +25,8 @@ const Noticias = {
 			m(Ads, { type: 'horizontal', margin: '12.5%', src: state.ads[0] }),
 			m(PostSection),
 			m(BannerInformativo),
-			m(Footer)
+			m(Footer),
+			m('#fb-root')
 		]
 	}
 }

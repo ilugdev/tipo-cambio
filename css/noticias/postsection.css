@@ -42,6 +42,7 @@
 #noticia-content{
 	white-space: pre-line;
 	color: var(--main-color);
+	text-align: justify;
 }
 
 .post-right-left-sections{

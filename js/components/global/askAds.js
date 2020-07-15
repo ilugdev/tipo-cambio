@@ -4,7 +4,10 @@ const askAds = (type, ads, idAd) => {
         url: `/publicidad?medida=${type}`
     })
     .then((data) => {
-        ads[idAd] = data.enlace
+        ads[idAd] = {
+            img: data.img,
+            link: data.link
+        }
     })
     .catch(err => console.log(err))
 }

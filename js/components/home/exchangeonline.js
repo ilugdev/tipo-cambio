@@ -15,7 +15,14 @@ var state = {
 	itemsMobile: [
 	],
 	ads: [
-
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		},
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		}
 	]
 }
 

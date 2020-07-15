@@ -70,7 +70,7 @@ const BannerTypeRest = {
 			m('h1#title.text', text.rest.title),
 			m('h3.text', text.rest.subtitle),
 			m('#subscription-input', [
-				m('input[type=email][placeholder=Suscríbete con tu e-mail]', {
+				m('input[type=email][placeholder=Suscríbete]', {
 					oninput: function(event) {
 						state.email = event.target.value;
 						state.showMessage = false

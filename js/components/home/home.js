@@ -17,7 +17,10 @@ var state = {
 		venta: '3.336'
 	},
 	ads: [
-
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		}
 	]
 }
 
@@ -34,12 +37,10 @@ const Home = {
 		.catch(err => console.log(err))
 
 		askAds('horizontal', state.ads, 0)
-		askAds('horizontal', state.ads, 1)
 	},
 	view: function() {
 		return [
 			m(Header, { page: 'home', title: 'Calcula el precio del dólar', subtitle: 'Tipo de Cambio del dólar hoy en Perú', dolar: state.dolar }),
-			m(Ads, { type: 'horizontal', margin: '10%', src: state.ads[0] }),
 			m(ExchangeOnline),
 			m(ElTipoDolarMsg),
 			m(ExchangePresencial),
@@ -47,7 +48,7 @@ const Home = {
 			m(BannerInformativo, { bannerType: 'home' }),
 			m(BoxEquivalencia, { dolar: state.dolar }),
 			m(PreguntasFrecuentes),
-			m(Ads, { type: 'horizontal', margin: '5%', src: state.ads[1] }),
+			m(Ads, { type: 'horizontal', margin: '5%', src: state.ads[0] }),
 			m(BannerInformativo, { bannerType: 'rest' }),
 			m(Footer)
 		]

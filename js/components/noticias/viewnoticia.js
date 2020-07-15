@@ -1,3 +1,5 @@
+import ShareFbButton from './sharefbbutton.js'
+
 const ViewNoticia = {
 	view: function(vnode) {
 		let img = vnode.attrs.img
@@ -11,7 +13,8 @@ const ViewNoticia = {
 				m('img#noticia-img', { src: img }),
 				m('h1#noticia-title', title),
 				m('h3#noticia-content', content),
-				m('a#share-button', { href: 'https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/#!/Noticias', target: '_blank' }, 'Compartir en Facebook' )
+				m('#fb-root'),
+				m(ShareFbButton)
 			])
 		)
 	}

@@ -15,7 +15,12 @@ var state = {
 	miniaturaNoticia: '',
 	pagina: '1',
 	cantNoticias: 0,
-	ads: [],
+	ads: [
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		}
+	],
 	destacados: []
 }
 

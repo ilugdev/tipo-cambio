@@ -66,7 +66,14 @@ var state = {
 	calender: [
 	],
 	ads: [
-
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		},
+		{
+			img: 'placeholder',
+			link: 'placeholder'
+		}
 	]
 }
 

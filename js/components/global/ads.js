@@ -14,7 +14,9 @@ const Ads = {
 		let type = vnode.attrs.type
 		let margin = vnode.attrs.margin
 		let id = ''
-		let src = vnode.attrs.src
+
+		let img = vnode.attrs.src.img
+		let link = vnode.attrs.src.link
 		
 		switch(type){
 			case 'horizontal':
@@ -34,9 +36,9 @@ const Ads = {
 		}
 
 		if (type === "horizontal") {
-			return m('.ad-con', { style: `margin-top:${margin}` },m('', { id: id }, m('iframe', { style: 'width: 100%; height: 100%', src: src })))
+			return m('a.ad-con', { style: `margin-top:${margin}`, href: link, target: '_blank' }, m('', { id: id }, m('img', { style: 'width: 100%; height: 100%', src: img })))
 		} else {
-			return m('', { id: id }, m('iframe', { style: 'width: 100%; height: 100%', src: src }))
+			return m('a', { id: id, href: link, target: '_blank' }, m('img', { style: 'width: 100%; height: 100%', src: img }))
 		}
 	}
 }
