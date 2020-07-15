@@ -3,7 +3,7 @@ import ShareFbButton from './sharefbbutton.js'
 const PostNoticias = {
 	view: function(vnode) {
 
-		let img = vnode.attrs.img
+		let img = "./admin/data_admin/" + vnode.attrs.img
 		let title = vnode.attrs.title
 		let content = vnode.attrs.content
 		let id = vnode.attrs.id
