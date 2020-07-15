@@ -1,4 +1,4 @@
-import RightSection from '../global/rightsection.js'
+import NoticiaDestacada from '../home/noticiadestacada.js'
 
 const state = {
 	destacados: []
@@ -25,7 +25,7 @@ const ElTipoDolarMsg = {
 				])
 			]),
 			m('#rightsectioncon',
-			m(RightSection, { modifyDestacados: modifyDestacados, destacados: state.destacados, homeDestacados: true })
+				m(NoticiaDestacada)
 			)
 		])
 	}

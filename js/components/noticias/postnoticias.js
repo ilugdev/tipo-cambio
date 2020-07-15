@@ -12,11 +12,11 @@ const PostNoticias = {
 		//show noticia
 		let LoadNoticia = vnode.attrs.LoadNoticia
 		
-		return m('.postnoticias-con', { id: showLeerMas ? '' : 'postnoticiadestacado'}, [
+		return m('.postnoticias-con', [
 			m(`img[src=${img}]`),
 			m('.postnoticias-con-text', [
 				m('h1', title),
-				showLeerMas ? m('h3', content) : null,
+				m('h3', content),
 				showLeerMas ? m('h3.leer-mas', { onclick: () => LoadNoticia(id) },'Leer más') : null
 			]),
 			showLeerMas ? m(ShareFbButton) : null

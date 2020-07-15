@@ -59,7 +59,7 @@ const RoundBox = {
 				m('#rounded-box', { style: pageStyle }, m(ChartPrices))
 			)
 		} else {
-			pageStyle = 'overflow: hidden; width: 40%;'
+			pageStyle = 'overflow: hidden'
 			
 			return m('#rounded-box-con',
 				m('#rounded-box', { style: pageStyle },
