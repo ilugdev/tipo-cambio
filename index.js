@@ -399,7 +399,7 @@ app.get('/lastnoticia', (req, res) => {
             fecha: '20-05-20',
             titulo: 'Last noticia',
             articulo: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.',
-            miniatura: './img/img_prueba/img_004.png',
+            miniatura: 'wallpaper.jpg',
             id: 'noticia03'
         }
     })

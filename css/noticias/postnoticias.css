@@ -5,6 +5,33 @@
 	position: relative;
 }
 
+#postnoticiadestacado{
+	flex-direction: column-reverse;
+	
+}
+
+#postnoticiadestacado img{
+	width: 100%;
+	height: 75%;
+}
+
+#postnoticiadestacado .postnoticias-con-text{
+	width: 100% !important;
+	height: 25%;
+	padding: 0 !important;
+	background-color: var(--main-color);
+	display: flex;
+	align-items: center;
+}
+
+#postnoticiadestacado h1{
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 2% 0;
+}
+
 .postnoticias-con img{
 	width: 50%;
 	height: 100%;
